@@ -16,7 +16,7 @@ bash <(curl -fsSL https://raw.githubusercontent.com/69learn/fastbbr/main/bbr.sh)
 wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
 ```
 
-#روش آخر
+#روش سوم
 
 ```sh
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
@@ -24,6 +24,12 @@ echo "net.ipv4.tcp_congestion_control=bbr" >> /etc/sysctl.conf
 sysctl -p
 lsmod | grep bbr
 ```
+
+#روش آخر
+```sh
+bash <(curl -fsSL https://raw.githubusercontent.com/69learn/fastbbr/main/hybla.sh)
+```
+
 
 
 
